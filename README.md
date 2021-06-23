@@ -1,6 +1,10 @@
 # Introduction
 Simple Web API Application 
- 
+
+Framework: .Net Core 3.1
+
+Data Access: Entity Framework Core (with Code First Approach)
+
 
 # Authentication
 Basic Authentication
@@ -23,7 +27,7 @@ example: GET /products?page=2&limit=10
 
 2. /products/search
 
-parameters: color(string),type(string),limit(int),page(int) 
+query string parameters: color(string),type(string),limit(int),page(int) 
 
 filter the products by given parameters and returns the result as json object 
 
