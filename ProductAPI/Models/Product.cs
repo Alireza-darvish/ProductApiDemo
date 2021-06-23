@@ -33,22 +33,22 @@ namespace ProductAPI.Models
         public double Price { get; set; }
         
         //for test purpose only
-        public static List<Product> TestProducts()
-        {
-            Random r = new Random(100);
-            var arr = new Product[300];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[i] = new Product() 
-                { 
-                    Id = Guid.NewGuid(), 
-                    Title = "Product " + (i + 1), 
-                    Color = (Color)(r.Next(3)), 
-                    Type = (Type)(r.Next(3)), 
-                    Price = r.Next(100, 10000)
-                };
-            }
-            return arr.ToList();
-        }
+        //public static List<Product> TestProducts()
+        //{
+        //    Random r = new Random(100);
+        //    var arr = new Product[300];
+        //    for (int i = 0; i < arr.Length; i++)
+        //    {
+        //        arr[i] = new Product() 
+        //        { 
+        //            Id = Guid.NewGuid(), 
+        //            Title = "Product " + (i + 1), 
+        //            Color = (Color)(r.Next(3)), 
+        //            Type = (Type)(r.Next(3)), 
+        //            Price = r.Next(100, 10000)
+        //        };
+        //    }
+        //    return arr.ToList();
+        //}
     }
 }
