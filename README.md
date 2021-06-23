@@ -1,5 +1,5 @@
 # Introduction
-Simple Web API Application 
+Simple .Net Core Web API Application 
 
 Framework: .Net Core 3.1
 
@@ -7,28 +7,28 @@ Data Access: Entity Framework Core (with Code First Approach)
 
 
 # Authentication
-Basic Authentication
+<b>Basic Authentication</b>
 
 Accepted credential:
 
-Username: abc
+* Username: abc
 
-Password: 123
+* Password: 123
 
 
 # Endpoints
-1. /products
+<b>1. /products</b>
 
-query string paramaters: limit(int),page(int)
+* query string paramaters: limit(int),page(int)
+  
+* returus a json object which contains list of products. it accepts 'limit' and 'page' parameters for pagination 
+ 
+* example: GET /products?page=2&limit=10 
 
-returus a json object which contains list of products. it accepts 'limit' and 'page' parameters for paganation
+<b>2. /products/search</b>
 
-example: GET /products?page=2&limit=10 
+* query string parameters: color(string),type(string),limit(int),page(int) 
 
-2. /products/search
+* filter the products by given parameters and returns the result as json object 
 
-query string parameters: color(string),type(string),limit(int),page(int) 
-
-filter the products by given parameters and returns the result as json object 
-
-example: GET /products/search?color=Color1&Type=Type1&page=2&limit=10 
+* example: GET /products/search?color=Color1&Type=Type1&page=2&limit=10 
