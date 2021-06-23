@@ -31,7 +31,8 @@ namespace ProductAPI.Models
         [JsonConverter(typeof(StringEnumConverter))]
         public Color Color { get; set; }
         public double Price { get; set; }
-
+        
+        //for test purpose only
         public static List<Product> TestProducts()
         {
             Random r = new Random(100);
